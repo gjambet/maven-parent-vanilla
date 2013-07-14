@@ -98,22 +98,31 @@
             </plugin>
         </plugins>
     </build>
-    
+
+    <scm>
+        <connection>scm:git:git://github.com/gjambet/maven-parent-vanilla.git</connection>
+        <developerConnection>scm:git:git://github.com/gjambet/maven-parent-vanilla.git</developerConnection>
+    </scm>
+
+    <repositories>
+        <repository>
+            <id>oups-repo</id>
+            <name>Oups Repository</name>
+            <url>http://nexus.oups.net/content/repositories/public/</url>
+        </repository>
+    </repositories>
+
     <distributionManagement>
         <repository>
-            <id>nexus-oups</id>
-            <name>oups.net Internal Repository</name>
-            <url>
-                http://nexus.oups.net/content/repositories/releases/
-            </url>
+            <id>oups-releases</id>
+            <name>Oups Releases</name>
+            <url>http://nexus.oups.net/content/repositories/releases/</url>
         </repository>
         <snapshotRepository>
-            <id>nexus-oups-snapshots</id>
-            <name>oups.net Internal Snapshot's Repository</name>
-            <url>
-                http://nexus.oups.net/content/repositories/snapshots/
-            </url>
+            <id>oups-snapshots</id>
+            <name>Oups Snapshots</name>
+            <url>http://nexus.oups.net/content/repositories/snapshots/</url>
         </snapshotRepository>
-    </distributionManagement>    
-    
+    </distributionManagement>
+
 </project>
