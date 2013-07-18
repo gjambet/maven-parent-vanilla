@@ -111,7 +111,7 @@
     <scm>
         <connection>scm:git:git://github.com/gjambet/maven-parent-vanilla.git</connection>
         <url>scm:git:git://github.com/gjambet/maven-parent-vanilla.git</url>
-        <developerConnection>scm:git:git://github.com/gjambet/maven-parent-vanilla.git</developerConnection>
+        <developerConnection>scm:git:https://github.com/gjambet/maven-parent-vanilla.git</developerConnection>
     </scm>
 
     <repositories>
